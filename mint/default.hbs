@@ -23,31 +23,7 @@
   <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
   <link rel="stylesheet" href="{{asset "css/styles.css"}}">{{ghost_head}}</head>
 <body class="{{body_class}} nav-closed">
-  <div class="nav">
-    <h3 class="nav-title">Menu</h3>
-    <a href="#" class="nav-close">
-      <span class="hidden">Close</span>
-    </a>
-    <ul>
-      <!-- <li class="nav-home nav-current" role="presentation">
-        <a href="#/">Home</a>
-      </li> -->
-      {{#foreach navigation}}
-      <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation">
-        <a href="{{url}}">{{label}}</a>
-      </li>
-      {{/foreach}}
-    </ul>
-    <a class="subscribe-button icon-rss" href="//rss">Subscribe</a>
-    <form>
-      <input id="search-field" placeholder="Search something..." />
-      <div type="submit" alt="search" class="search-submit">
-        <span class="icon-search"></span>
-      </div>
-    </form>
-    <section id="results"></section>
-    {{navigation}}
-  </div>
+  {{> "navigation"}}
   <span class="nav-cover"></span>
 
   <div class="site-wrapper">
