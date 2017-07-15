@@ -75,58 +75,60 @@
         </a>
       </h2>
     </header>
-    {{{body}}}
-    <aside id="scroll_box" class="author">
-    <div class="slide-box-scroll">
-      <div id="backtoTop" data-action="gototop"></div>
-      <img class="profile-image" src="{{asset "img/profile-image.jpg"}}" alt="iops" />
-    </a>
-    <p class="name">
-      by <strong>Jam</strong>
-    </p>
-    <p class="address">北京, 海淀区</p>
-    <p class="link">网不出头不成主，员不出力怎成勋</p>
-    <ul class="social">
-      <!-- <li>
-      <a class="icon-twitter" target="_blank" rel="nofollow" href="http://twitter.com/svencn" title="Follow me on Twitter"></a>
-    </li>
-    <li>
-      <a class="icon-dribbble"  target="_blank" rel="nofollow" href="https://dribbble.com/svencn" title="See what I'm working on Dribbble"></a>
-    </li>
-    <li>
-      <a class="icon-wordpress" target="_blank" href="http://www.seavia.com" hreflang="zh" title="Check out my Chinese blog."></a>
-    </li>
-    -->
-  </ul>
-  <div class="percent">
-    You have read:
-    <div class="per"></div>
-    <span></span>
-    %
-  </div>
-</div>
-</aside>
-    <footer class="main-footer">
-      <div class="container clearfix">
-
-        <a class="icon-rss" href="{{@blog.url}}/rss/" title="RSS Feed"></a>
-        <p>
-          All content copyright
-          <a href="{{@blog.url}}" title="{{@blog.title}}">{{@blog.title}}</a>
-          &copy; 2015. All rights reserved.
-        </p>
-        <p>
-          Powered by Ghost. Theme Mint designed by
-          <a href="http://www.seavia.com/jianzhan/ghost-theme-mint-free-download.html" target="_blank" rel="external" title="主题由SVEN设计">Sven</a>
-          <a href="http://www.iops.cc" target="_blank" rel="external" title=",Jam二次加工">Sven</a>
-          .
-        </p>
+    <div class="container clearfix">
+        {{{body}}}
+        <aside id="scroll_box" class="author">
+          <div class="slide-box-scroll">
+            <div id="backtoTop" data-action="gototop"></div>
+            <img class="profile-image" src="{{asset "img/profile-image.jpg"}}" alt="iops" />
+          </a>
+          <p class="name">
+            by <strong>Jam</strong>
+          </p>
+          <p class="address">北京, 海淀区</p>
+          <p class="link">网不出头不成主，员不出力怎成勋</p>
+          <ul class="social">
+            <!-- <li>
+            <a class="icon-twitter" target="_blank" rel="nofollow" href="http://twitter.com/svencn" title="Follow me on Twitter"></a>
+          </li>
+          <li>
+            <a class="icon-dribbble"  target="_blank" rel="nofollow" href="https://dribbble.com/svencn" title="See what I'm working on Dribbble"></a>
+          </li>
+          <li>
+            <a class="icon-wordpress" target="_blank" href="http://www.seavia.com" hreflang="zh" title="Check out my Chinese blog."></a>
+          </li>
+          -->
+        </ul>
+        <div class="percent">
+          You have read:
+          <div class="per"></div>
+          <span></span>
+          %
+        </div>
       </div>
-    </footer>
-    {{ghost_foot}}
-    <script src="{{asset "js/jquery-1.11.0.min.js"}}"></script>
-    <script src="{{asset "js/mint.js"}}"></script>
-    <script>
+    </aside>
+</div>
+<footer class="main-footer">
+  <div class="container clearfix">
+
+    <a class="icon-rss" href="{{@blog.url}}/rss/" title="RSS Feed"></a>
+    <p>
+      All content copyright
+      <a href="{{@blog.url}}" title="{{@blog.title}}">{{@blog.title}}</a>
+      &copy; 2015. All rights reserved.
+    </p>
+    <p>
+      Powered by Ghost. Theme Mint designed by
+      <a href="http://www.seavia.com/jianzhan/ghost-theme-mint-free-download.html" target="_blank" rel="external" title="主题由SVEN设计">Sven</a>
+      <a href="http://www.iops.cc" target="_blank" rel="external" title=",Jam二次加工">Sven</a>
+      .
+    </p>
+  </div>
+</footer>
+{{ghost_foot}}
+<script src="{{asset "js/jquery-1.11.0.min.js"}}"></script>
+<script src="{{asset "js/mint.js"}}"></script>
+<script>
     
         var searchField = $("#search-field").ghostHunter({
                             results   : "#results",
@@ -140,5 +142,5 @@
         }
     
       </script>
-  </div>
+</div>
 </html>
