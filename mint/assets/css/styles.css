@@ -909,13 +909,13 @@ hr {
 
 .author {
     text-align: center;
-    width: 25%;
+    width: 24%;
     float: left;
-    margin: 20px 5% 0 5%
+    margin: 20% 5% 0 5%
 }
 
 .content {
-    width: 60%;
+    width: 66%;
     margin-right: 5%;
     float: right
 }
